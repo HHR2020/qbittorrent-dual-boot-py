@@ -2,6 +2,8 @@
 name = "qbittorrent-dual-boot-py"
 version = "0.1.0"
 description = "Convert qBittorrent .fastresume save paths between Windows and POSIX for dual-boot setups"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE.txt"]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
