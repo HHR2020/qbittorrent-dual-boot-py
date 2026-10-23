@@ -5,6 +5,13 @@ Useful for dual-boot setups where the same qBittorrent data directory is shared 
 
 Inspired by [qbittorrent_dual_boot](https://github.com/Ovenoboyo/qbittorrent_dual_boot/tree/main)
 
+The Windows and POSIX paths define matching save roots. Subdirectories are
+preserved, and path separators in `mapped_files` are converted too. For example,
+`D:\qBittorrent\Series\Season 1` becomes `/mnt/D/qBittorrent/Series/Season 1`
+with the roots used below. Save paths outside the specified root are left unchanged.
+Both roots must be absolute paths. Relative `mapped_files` paths stay relative;
+absolute entries are remapped only when they are under the specified source root.
+
 ## Usage
 
 ```bash
